@@ -11,12 +11,3 @@ const fillTemplate = (templates, params, template) => {
 	});
 	return filledTemplate;
 }
-
-const testFillTemplate = () => {
-	const templates = {
-		main: "namespace test { {{class}} }",
-		class: "class {{name}} {}"
-	}
-	return fillTemplate(templates, { class: { name : "EndOfTheWorld"} })
-}
-//console.log(testFillTemplate());
